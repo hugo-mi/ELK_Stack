@@ -23,7 +23,7 @@ Verify Elasticsearch Reception of Data
 	curl -XGET http://localhost:9200/_cat/indices?v
 	
 	
-lancer packet beat 
+Lancer packet beat 
 	sudo ./packetbeat -e -c packetbeat.yml -I /home/hugo/Projet_ELK -d
 	
 			

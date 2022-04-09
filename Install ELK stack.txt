@@ -1,0 +1,30 @@
+#### Elastic Searck ####
+Start Elastic
+	sudo systemctl start elasticsearch.service
+Test Elastic
+	curl -X GET "localhost:9200"
+	http://localhost:9200
+	
+#### Kibana ####
+Start Kibana
+	sudo systemctl start kibana
+	http://localhost:5601
+	
+#### Logstash ####	
+Start Logstash
+	sudo systemctl start logstash
+Check status 
+	sudo systemctl status logstash
+	
+#### Filebeat ####
+Start Filebeat
+	sudo systemctl start filebeat
+Verify Elasticsearch Reception of Data
+	curl -XGET http://localhost:9200/_cat/indices?v
+	
+	
+lancer packet beat 
+	sudo ./packetbeat -e -c packetbeat.yml -I /home/hugo/Projet_ELK -d
+	
+			
+		
